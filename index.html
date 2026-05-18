@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataFlow Monitor | Landing Page</title>
+  <meta
+    name="description"
+    content="Landing page fictícia do DataFlow Monitor, uma plataforma para monitorar pipelines, ETL, integrações e alertas técnicos."
+  >
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header" id="topo">
+      <div class="container header-inner">
+        <a class="brand" href="#topo">DataFlow Monitor</a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Abrir menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+          <a href="#recursos">Recursos</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#precos">Preços</a>
+          <a href="#faq">FAQ</a>
+          <a class="button button-sm button-primary" href="#cta">Começar agora</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Observabilidade para fluxos de dados</span>
+            <h1>Monitore seus pipelines de dados antes que eles quebrem em produção</h1>
+            <p>
+              Uma forma simples de acompanhar cargas ETL, jobs em cloud, integrações e alertas
+              críticos em um único painel.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#como-funciona">Ver demonstração</a>
+              <a class="button button-secondary" href="#recursos">Conhecer recursos</a>
+            </div>
+
+            <ul class="hero-highlights" aria-label="Principais destaques">
+              <li>Alertas claros para falhas silenciosas</li>
+              <li>Visão por ambiente, time e execução</li>
+              <li>Setup rápido para operações técnicas</li>
+            </ul>
+          </div>
+
+          <div class="dashboard-mockup" aria-label="Mockup visual do dashboard">
+            <div class="dashboard-window">
+              <div class="window-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="dashboard-body">
+                <div class="dashboard-summary">
+                  <article class="metric-card">
+                    <p>Pipelines ativos</p>
+                    <strong>128</strong>
+                    <span class="trend positive">+12% esta semana</span>
+                  </article>
+                  <article class="metric-card alert">
+                    <p>Jobs com falha</p>
+                    <strong>03</strong>
+                    <span class="trend negative">Requer atenção</span>
+                  </article>
+                  <article class="metric-card">
+                    <p>Tempo médio de execução</p>
+                    <strong>4m 26s</strong>
+                    <span class="trend">Dentro do esperado</span>
+                  </article>
+                  <article class="metric-card">
+                    <p>Última carga concluída</p>
+                    <strong>11:42</strong>
+                    <span class="trend positive">ERP Sync Production</span>
+                  </article>
+                </div>
+
+                <div class="dashboard-panels">
+                  <article class="panel panel-large">
+                    <div class="panel-header">
+                      <h2>Saúde dos pipelines</h2>
+                      <span>Últimas 24h</span>
+                    </div>
+                    <div class="pipeline-list">
+                      <div class="pipeline-row ok">
+                        <span>Customer Sync</span>
+                        <span>Normal</span>
+                      </div>
+                      <div class="pipeline-row warn">
+                        <span>Billing ETL</span>
+                        <span>Atrasado</span>
+                      </div>
+                      <div class="pipeline-row error">
+                        <span>Warehouse Load</span>
+                        <span>Falhou</span>
+                      </div>
+                      <div class="pipeline-row ok">
+                        <span>Analytics Export</span>
+                        <span>Normal</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="panel">
+                    <div class="panel-header">
+                      <h2>Alertas recentes</h2>
+                      <span>Tempo real</span>
+                    </div>
+                    <ul class="alert-list">
+                      <li>
+                        <span class="alert-dot error"></span>
+                        Falha no `warehouse-load`
+                      </li>
+                      <li>
+                        <span class="alert-dot warn"></span>
+                        SLA alto em `billing-etl`
+                      </li>
+                      <li>
+                        <span class="alert-dot ok"></span>
+                        Retry aplicado com sucesso
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="problemas">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Dor operacional</span>
+            <h2>Você só descobre a falha quando alguém reclama?</h2>
+            <p>
+              Times técnicos perdem tempo procurando sinais espalhados quando deveriam agir rápido
+              sobre o problema certo.
+            </p>
+          </div>
+
+          <div class="card-grid four-columns">
+            <article class="info-card">
+              <div class="card-icon">!</div>
+              <h3>Jobs que falham em silêncio</h3>
+              <p>Erros passam despercebidos até impactarem relatórios, integrações ou clientes.</p>
+            </article>
+            <article class="info-card">
+              <div class="card-icon">⏱</div>
+              <h3>Cargas atrasadas sem alerta</h3>
+              <p>SLAs estouram porque ninguém percebeu que a execução ficou presa no meio do fluxo.</p>
+            </article>
+            <article class="info-card">
+              <div class="card-icon">#</div>
+              <h3>Logs espalhados em várias ferramentas</h3>
+              <p>O contexto da falha fica fragmentado entre cloud, scripts, dashboards e mensagens.</p>
+            </article>
+            <article class="info-card">
+              <div class="card-icon">?</div>
+              <h3>Dificuldade para saber o que está em produção</h3>
+              <p>Sem visibilidade centralizada, fica difícil entender o estado real do ambiente.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="recursos">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Recursos principais</span>
+            <h2>Tudo que você precisa para acompanhar seus fluxos de dados</h2>
+            <p>
+              Um conjunto enxuto de recursos para dar contexto operacional sem adicionar
+              complexidade desnecessária.
+            </p>
+          </div>
+
+          <div class="card-grid three-columns">
+            <article class="feature-card">
+              <div class="card-icon">◉</div>
+              <h3>Monitoramento de pipelines</h3>
+              <p>Visualize o estado de cargas, integrações e tarefas agendadas em um só lugar.</p>
+            </article>
+            <article class="feature-card">
+              <div class="card-icon">⌁</div>
+              <h3>Alertas inteligentes</h3>
+              <p>Receba sinais claros quando uma etapa falhar, atrasar ou fugir do comportamento esperado.</p>
+            </article>
+            <article class="feature-card">
+              <div class="card-icon">◷</div>
+              <h3>Histórico de execuções</h3>
+              <p>Acompanhe eventos passados para investigar causas, recorrências e tendência de erros.</p>
+            </article>
+            <article class="feature-card">
+              <div class="card-icon">▣</div>
+              <h3>Visão por ambiente</h3>
+              <p>Separe produção, homologação e desenvolvimento para reduzir ruído na operação.</p>
+            </article>
+            <article class="feature-card">
+              <div class="card-icon">☁</div>
+              <h3>Integração com cloud</h3>
+              <p>Modele monitoramento para jobs, funções, containers e fluxos hospedados em nuvem.</p>
+            </article>
+            <article class="feature-card">
+              <div class="card-icon">⇄</div>
+              <h3>Painel para times técnicos</h3>
+              <p>Compartilhe contexto entre engenharia, dados e operações sem depender de múltiplas telas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="como-funciona">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Fluxo simples</span>
+            <h2>Como funciona</h2>
+            <p>O produto fictício foi pensado para mostrar um onboarding direto e fácil de explicar.</p>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <span class="step-number">1</span>
+              <h3>Conecte seus processos</h3>
+              <p>Cadastre pipelines, integrações, cargas ETL e jobs que precisam ser acompanhados.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">2</span>
+              <h3>Defina alertas e regras</h3>
+              <p>Escolha eventos importantes como falha, atraso, retry excessivo ou tempo fora do padrão.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">3</span>
+              <h3>Acompanhe tudo em tempo real</h3>
+              <p>Use o painel central para enxergar a saúde dos fluxos e agir rápido quando algo sair do normal.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="metricas">
+        <div class="container">
+          <div class="metrics-panel">
+            <div class="section-heading align-left">
+              <span class="eyebrow">Indicadores visuais</span>
+              <h2>Métricas que reforçam confiança operacional</h2>
+              <p>
+                Esses números são fictícios, mas ajudam a criar uma apresentação crível para um produto SaaS.
+              </p>
+            </div>
+
+            <div class="metrics-grid">
+              <article class="metric-highlight">
+                <strong class="counter" data-target="99.9" data-suffix="%">0</strong>
+                <p>de disponibilidade acompanhada</p>
+              </article>
+              <article class="metric-highlight">
+                <strong class="counter" data-target="10" data-suffix="k+">0</strong>
+                <p>execuções monitoradas por mês</p>
+              </article>
+              <article class="metric-highlight">
+                <strong class="counter" data-target="3" data-suffix=" min">0</strong>
+                <p>para configurar o primeiro pipeline</p>
+              </article>
+              <article class="metric-highlight">
+                <strong class="counter" data-target="24" data-suffix="/7">0</strong>
+                <p>alertas automatizados</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="precos">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Planos fictícios</span>
+            <h2>Preços pensados para diferentes estágios do time</h2>
+            <p>
+              Estrutura simples para explicar comparação de planos em uma landing page sem backend.
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="pricing-card">
+              <h3>Starter</h3>
+              <p class="price">R$ 0<span>/mês</span></p>
+              <p class="plan-description">Ideal para projetos pessoais e primeiros testes de monitoramento.</p>
+              <ul>
+                <li>Até 3 pipelines monitorados</li>
+                <li>Alertas básicos por status</li>
+                <li>Histórico curto de execuções</li>
+              </ul>
+              <a class="button button-secondary full-width" href="#cta">Começar grátis</a>
+            </article>
+
+            <article class="pricing-card featured">
+              <span class="pricing-badge">Recomendado</span>
+              <h3>Pro</h3>
+              <p class="price">R$ 59<span>/mês</span></p>
+              <p class="plan-description">Feito para times pequenos que precisam de mais contexto e automação.</p>
+              <ul>
+                <li>Até 25 pipelines monitorados</li>
+                <li>Alertas por SLA, atraso e falha</li>
+                <li>Visão por ambiente e time</li>
+                <li>Dashboard com histórico ampliado</li>
+              </ul>
+              <a class="button button-primary full-width" href="#cta">Escolher Pro</a>
+            </article>
+
+            <article class="pricing-card">
+              <h3>Team</h3>
+              <p class="price">R$ 149<span>/mês</span></p>
+              <p class="plan-description">Pensado para operações maiores com mais volume, times e criticidade.</p>
+              <ul>
+                <li>Pipelines ilimitados</li>
+                <li>Alertas avançados e regras customizadas</li>
+                <li>Painéis compartilhados por squads</li>
+                <li>Maior retenção de histórico</li>
+              </ul>
+              <a class="button button-secondary full-width" href="#cta">Falar com vendas</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="faq">
+        <div class="container faq-layout">
+          <div class="section-heading align-left">
+            <span class="eyebrow">Perguntas frequentes</span>
+            <h2>FAQ</h2>
+            <p>As respostas abaixo deixam claro o caráter fictício e educacional deste projeto.</p>
+          </div>
+
+          <div class="faq-list">
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                O DataFlow Monitor é uma ferramenta real?
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Não. O DataFlow Monitor é um produto fictício criado apenas para demonstrar a
+                  construção e publicação de uma landing page estática.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                Preciso configurar backend para usar essa landing page?
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Não. O projeto foi feito para funcionar somente com HTML, CSS e JavaScript puro,
+                  sem API, banco de dados ou servidor de aplicação.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                Esse projeto usa algum framework?
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Não. Todo o código foi escrito em arquivos simples, sem React, Vue, Angular ou
+                  qualquer dependência obrigatória.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                Posso adaptar o layout para outro produto?
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Sim. A estrutura foi organizada para facilitar a troca de textos, cores, seções e
+                  elementos visuais conforme o tema do seu tutorial.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                O site funciona sem servidor local?
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Sim. Basta abrir o arquivo <code>index.html</code> no navegador, já que não há
+                  dependências externas obrigatórias para o funcionamento da página.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cta">
+        <div class="container">
+          <div class="cta-panel">
+            <span class="eyebrow">Próximo passo</span>
+            <h2>Pronto para ter mais visibilidade sobre seus dados?</h2>
+            <p>
+              Use esta landing page como base para apresentar um produto técnico com visual
+              profissional e estrutura simples de manter.
+            </p>
+            <a class="button button-primary" href="#topo">Começar agora</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#topo">DataFlow Monitor</a>
+          <p>
+            Plataforma fictícia para monitoramento de pipelines, cargas ETL, integrações e alertas
+            técnicos.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#recursos">Recursos</a>
+          <a href="#precos">Preços</a>
+          <a href="#faq">FAQ</a>
+        </div>
+
+        <p class="footer-note">Projeto fictício criado para fins educacionais.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
