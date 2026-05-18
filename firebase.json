@@ -1,0 +1,37 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Strict-Transport-Security",
+            "value": "max-age=31556926; includeSubDomains"
+          },
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "strict-origin-when-cross-origin"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "camera=(), geolocation=(), microphone=()"
+          },
+          {
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com 'sha256-z7a8Jt79A0gIgQuE7uE2+NVnjC3wmFYg3yFsOE99iQk=' 'sha256-RaIbl1JsHWNs1Jmcf0KJp18N71AnGQUmizEI3L5UYCo=' 'sha256-mBO3mKuHFXP+mzowLUQafxDqLAJ+us//rgFRi+yNLg4=' 'sha256-gWVMftwJ5VbSnP7UUk8mvogYk1z9J3A8fEM3YEXgckk=' 'sha256-IFJPdVpujwJwsrErcBCMsthaMn1s79SPSkWSU+AEkXg=' 'sha256-bS2YS5UQ+WT03t+vAKw+72r2BzHWCft0Ju7wh5+zTcI=' 'sha256-p23mtbq9jLM7A1J04YVTICVhnkknmqJ7CRsONqxQNKs=' 'sha256-o2wQlkaQ2cbefUVuKKWWJh+K7epwWfdAJKkw0D/QHHE=' 'sha256-zrfQBuNUNzJYQczfcnggMhwbhM63ggA50jKbPKSDOKA=' 'sha256-I9jZzJfHu2s2S4OBz7P1gVuPbSjppuYC/YEi7YoH1C4='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net; frame-src https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com; media-src 'self'; manifest-src 'self'; upgrade-insecure-requests"
+          }
+        ]
+      }
+    ]
+  }
+}
