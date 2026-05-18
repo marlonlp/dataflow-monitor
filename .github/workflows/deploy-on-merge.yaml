@@ -16,3 +16,4 @@ jobs:
           channelId: live
           projectId: dataflow-monitor-mockup
           entryPoint: .
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
